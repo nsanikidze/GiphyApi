@@ -1,17 +1,4 @@
-export const searchInputs = [
-    {
-      value: "Internet Cats",
-    },
-    {
-      value: "Meme's",
-    },
-    {
-      value: "Typing",
-    },
-    {
-      value: "Space",
-    },
-    {
-      value: "Rick and Morty",
-    },
-  ]
+export let setContent = (id, value) => { 
+  let element = document.getElementById(id);
+  element.innerHTML = value;
+};

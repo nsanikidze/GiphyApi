@@ -7,23 +7,19 @@
 
 /* Container */
 .container{
-    width: 960px;
+    width: 1200px;
     margin: auto;
 }
 
 .header-item{
     text-align: center;
-    height: 150px;
 }
 
 h1{
     font-size: 2.5rem;
     font-weight: 500;
     line-height: 1.2;
-    color: inherit;
-    font-family: inherit;
     margin-bottom: 0.5rem;
-    margin-top: 0px;
 }
 
 .search-bar{
@@ -31,8 +27,7 @@ h1{
 }
 
 
-
-.search-bar > #submit{
+.search-bar > .submit{
     margin-bottom: 6px;
 }
 
@@ -64,6 +59,8 @@ h1{
     border-color: #28a745;
 }
 
+
+
 .btn-danger {
     color: #fff;
     background-color: #dc3545;
@@ -73,9 +70,8 @@ h1{
 
 input, button, select, optgroup, textarea {
     margin: 0;
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
 input[type="text" i] {
@@ -87,4 +83,41 @@ hr {
     margin-bottom: 1rem;
     border: 0;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.gif-items{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.gif > h6{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.gif {
+    margin: 0.5rem;
+    display: inline-block;
+    border: 1px solid black;
+    height: auto;
+    width: auto;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    margin-bottom: 0.5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+}
+
+.hidden{
+    display: none;
+}
+
+.active{
+    display: block;
 }
