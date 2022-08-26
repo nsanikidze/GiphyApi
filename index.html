@@ -1,42 +1,44 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="./css/styles.css" />
-    <title>Giphy API Search Example</title>
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <div class="header-item">
-          <h1>Giphy API Example</h1>
-          <div id="header-buttons"></div>
-          <div class="search-bar">
-            <input type="text" id="search-text" />
-            <input
-              type="submit"
-              value="Submit"
-              id="submit"
-              class="btn btn-sm btn-success"
-            />
-            <input
-              type="submit"
-              value="See what's trending"
-              id="trending-submit"
-              class="trending btn btn-sm btn-danger"
-            />
-          </div>
-        </div>
-      </div>
-    </header>
-    <hr />
 
-    <section class="body-session">
-      <div class="container">
-        <div class="gif-items" id="gif-items-id">
+<head>
+  <link rel="stylesheet" href="./css/styles.css" />
+  <title>Giphy API Search Example</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <div class="header">
+        <h1>Giphy API Example</h1>
+
+        <div id="header-buttons">
         </div>
+
+        <div class="search-bar">
+          <input type="text" id="search-text">
+          <input type="submit" value="Submit" id="submit" class="header-btn">
+          <input type="submit" value="See what's trending" id="trending-submit"
+            class="header-btn">
+        </div>
+
       </div>
-    </section>
-    <script type="module" src="./js/main.js">
-    </script>
-  </body>
+    </div>
+   </header>
+
+  <hr />
+
+  <section class="body">
+    <div class="container">
+      <div class="gif-items" id="gif-items-id">
+      </div>
+    </div>
+  </section>
+
+  <script type="module" src="./js/main.js">
+  </script>
+
+</body>
+
 </html>

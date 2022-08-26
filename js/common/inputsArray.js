@@ -1,4 +1,4 @@
-export const searchInputs = [
+export const headerButtons = [
     {
       value: "Internet Cats",
     },

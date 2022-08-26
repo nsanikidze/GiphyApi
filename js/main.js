@@ -1,15 +1,19 @@
-import { searchInputs } from "./common/inputsArray.js";
-import { INPUTS } from "./modules/inputs.js";
+import { headerButtons } from "./common/inputsArray.js";
+import { Header } from "./modules/header.js";
 
 
-console.log(searchInputs);
-let inputButtons = new INPUTS(searchInputs);
+
+let inputButtons = new Header(headerButtons);
 inputButtons.rander();
 
 
 
 let submitButton = document.querySelector('#submit');
-submitButton.addEventListener('click', () =>  inputButtons.search() );
+submitButton.addEventListener('click', () =>  {
+    let text = document.getElementById("search-text").value;
+    inputButtons.search(text, true);
+});
 
 let trandingButton = document.querySelector('#trending-submit');
-trandingButton.addEventListener('click', () =>  inputButtons.trending() );
+trandingButton.addEventListener('click', () =>  inputButtons.getTrendingGifs() );
+

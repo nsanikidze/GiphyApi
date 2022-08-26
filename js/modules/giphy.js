@@ -1,8 +1,11 @@
 import { setContent } from "../common/common.js";
-export class GIF {
+
+export class Giphy {
+
   constructor(gifObj) {
     this.gifObj = gifObj;
   }
+
   _getGif() {
     let list = this.gifObj.map((obj) => {
       return `<div class="gif">
@@ -13,7 +16,8 @@ export class GIF {
     });
     return list.join(" ");
   }
-  _changeImageState() {
+
+  _changeGifState() {
     let gifs = document.querySelectorAll(".gif");
     for (let i = 0; i < gifs.length; i++) {
       gifs[i].addEventListener("click", () => {
@@ -24,10 +28,10 @@ export class GIF {
       });
     }
   }
+
   rander() {
     setContent("gif-items-id", this._getGif());
-    this._changeImageState();
+    this._changeGifState();
   }
 }
 
-//
