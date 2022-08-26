@@ -29,7 +29,7 @@ export class Header {
     }
   }
 
-  searchWithHeaderButton(){
+  _searchWithHeaderButton(){
     let headerBTN = document.querySelectorAll('.btn');
     for(let btn of headerBTN){
       btn.addEventListener('click', () =>  {
@@ -41,7 +41,7 @@ export class Header {
 
   rander() {
     setContent("header-buttons", this._getInputs());
-    this.searchWithHeaderButton();
+    this._searchWithHeaderButton();
   }
 
   search(text, addButton) {
